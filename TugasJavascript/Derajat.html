@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konversi Waktu</title>
+    <link rel="stylesheet" href="Derajat.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Konversi Satuan Waktu</h1>
+        
+        <div class="converter">
+            <label for="value">Nilai:</label>
+            <input type="number" id="value" placeholder="Masukkan nilai">
+            
+            <label for="from">Dari:</label>
+            <select id="from">
+                <option value="seconds">Detik</option>
+                <option value="minutes">Menit</option>
+                <option value="hours">Jam</option>
+            </select>
+            <label for="to">Ke:</label>
+            <select id="to">
+                <option value="seconds">Detik</option>
+                <option value="minutes">Menit</option>
+                <option value="hours">Jam</option>
+                
+            </select>
+            
+            <button onclick="convertTime()">Konversi</button>
+        </div>
+        
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="jawa.js"></script>
+</body>
+</html>

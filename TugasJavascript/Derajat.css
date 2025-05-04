@@ -1,0 +1,92 @@
+
+body {
+    font-family: 'Georgia', serif;
+    background-color:rgb(43, 43, 8);
+    color:rgb(4, 3, 3);
+    margin: 0;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+    align-items:center;
+    display:flex;
+}
+.container {
+    max-width: 600px;
+    margin: 10px auto;
+    background: #2c2c3e;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1s ease;
+}
+h1 {
+    text-align: center;
+    color:rgb(212, 208, 0);
+    margin-bottom: 30px;
+}
+.converter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.converter label {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.converter input,
+.converter select {
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 8px;
+    background-color: #3a3a4f;
+    color: #fff;
+    font-size: 16px;
+    transition: border 0.3s ease;
+}
+
+.converter input:focus,
+.converter select:focus {
+    border-color:rgb(194, 212, 0);
+    outline: none;
+}
+
+
+.converter button {
+    padding: 10px 20px;
+    background-color:rgb(212, 198, 0);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-top:17px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.converter button:hover {
+    background-color: #0097a7;
+    transform: scale(1.05);
+}
+
+.result {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+    color: #ffffff;
+    animation: slideIn 0.5s ease;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
